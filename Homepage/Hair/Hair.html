@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/689b6f6569.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Hair.css">
+    <title>Document</title>
+</head>
+<body>
+  <div id="n" ></div> 
+    <h1 id="makeupheading" >Dry & Frizzy Hair Treatment </h1>
+    <div id="cerosel" >
+    </div>
+    <h1 id="makeupheading1" >All Products</h1>
+    <div id="products" >
+    <div id="category" >
+        <h3 id="h31" >Filter by Category</h3>
+    </div>
+   <div id="filter" >
+    <form id="form" onsubmit="checkCategory(event)" >
+        <div>Category</div>
+       <select id="Category">
+       
+        <option  id="pencil" value="pencil">pencil</option>
+        <option  id="lip_gloss"  value="lip_gloss">lip_gloss</option>
+        <option id="palette"   value="palette">palette</option>
+        <option id="lipstick" value="lipstick">lipstick</option>
+        <option id="powder"   value="powder">powder</option>
+        <option  id="lip_stain"  value="lip_stain">lip_stain</option>
+       </select>
+       <br><br>
+       <!-- <input value="Submit"  type="submit" /> -->
+       <button value="Submit" type="submit"  id="submit" >Filter</button>
+     </form>
+
+     <form   id="form1" onsubmit="checkPrice(event)" >
+        <div>Price</div>
+       <select  id="prices" >
+        <option value="299">Rs - 0 to Rs - 299</option>
+        <option value="499">Rs - 299 to Rs - 499</option>
+        <option value="599">Rs - 499 to Rs - 599</option>
+        <option value="799">Rs - 599 to Rs - 799</option>
+        <option value="999">Rs - 799 to Rs - 999</option>
+        <option value="1299">Rs - 999 to Rs - 1299</option>
+        <option value="1599">Rs - 1299 to Rs - 1599</option>
+       </select>
+       <br><br>
+       <button value="Submit" type="submit"  id="submit1" >Filter</button>
+     </form>
+
+     
+     <form  id="form2" onsubmit="checkBrand(event)" >
+        <div>Brand</div>
+       <select id="brand" >
+        <option value="colourpop">colourpop</option>
+        <option value="boosh">boosh</option>
+        <option value="deciem">deciem</option>
+        <option value="rejuva minerals">rejuva minerals</option>
+        <option value="marienatie">marienatie</option>
+        <option value="glossier">glossier</option>
+        <option value="nyx">nyx</option>
+       </select>
+       <br><br>
+       <button value="Submit" type="submit"  id="submit2" >Filter</button>
+     </form>
+
+     <form  id="form3" onsubmit="checkProduct(event)" >
+        <div>Product type</div>
+       <select id="product" >
+        <option value="lipstick">lipstick</option>
+        <option value="lip_liner">lip_liner</option>
+        <option value="foundation">foundation</option>
+        <option value="eyeshadow">eyeshadow</option>
+        <option value="mascara">mascara</option>
+        <option value="eyeliner">eyeliner</option>
+        <option value="eyebrow">eyebrow</option>
+       </select>
+       <br><br>
+       <button value="Submit" type="submit"  id="submit3" >Filter</button>
+     </form>
+     <div id="filterbutton" >
+      <button id="btn1" onclick="filterdatalh()" >Lower to High</button>
+      <button id="btn2" onclick="filterdatahl()" > High to lower</button>
+      <button id="btn3" onclick="filterdataaz()" >A to Z</button>
+      <button id="btn4" onclick="filterdataza()" >Z to A</button>
+    </div>
+     <div id="appendproduct">
+   
+     </div>
+    </div>
+    </div>
+    <div id="footer" ></div> 
+</body>
+</html>
+<script src="./Hair.js" type="module" > </script>
